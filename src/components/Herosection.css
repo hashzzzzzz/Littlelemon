@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap');
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 435px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: #495e57;
+}
+
+.left {
+  margin-left: 150px;
+  flex: 1;
+  padding: 0px;
+  text-align: left; 
+}
+
+.left h1,
+.left h2,
+.left p {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: 'Markazi Text', serif;
+  text-align: left; }
+
+.left h1 {
+    color: #F4CE14;
+  font-size: 64pt;
+}
+
+.left h2 {
+  font-size: 40pt;
+  color: #EDEFEE;
+}
+
+.left p {
+  font-size: 30pt;
+  color: #EDEFEE;
+}
+
+.left button {
+  width: 300px;
+  height: 50px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Markazi Text', serif;
+  text-align: center; 
+  background-color: #F4CE14;
+  border-radius: 15px;
+}
+
+.foto {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.foto img {
+  margin-top: 60px;
+  margin-right: 120px;
+  width: 400px;
+  height: 465px;
+  border-radius: 8px;
+  object-fit: cover;
+}

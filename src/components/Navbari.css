@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap');
+
+.navi{
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  .elementet{
+    display: flex;
+    align-items: center;
+    gap: 68px;
+    list-style-type: none;
+}
+.elementet .texti{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+    font-family: 'Markazi Text', serif;
+    font-size: 28px;
+}
+.texti a{
+    text-decoration: none;
+    color: black;
+}
+.navi img {
+    width: 280px;
+    height: 80px;
+    margin-right: 20px;
+  }
