@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.all {
+    background-color: rgb(208, 208, 187);
+}
+.Cards {
+    margin-top: 0; /* <-- Changed this */
+    margin-bottom: 0px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-bottom: 10px;
+}
+
+
+.Carda {
+    margin-left: 20px;
+    width: 100%;
+    max-width: 330px;
+    height: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.saladfoto {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    display: block;
+}
+
+.backgroundi {
+    background-color: #edefee;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleprice {
+    margin-left: 7px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Added this to space the content between */
+    margin-bottom: 6px; /* Keeps it tight with the paragraph */
+}
+
+
+.title {
+    font-size: 1.1rem; /* Slightly smaller title */
+    font-weight: bold;
+}
+
+.price {
+    color: rgb(244, 46, 79); /* Set price color to pink */
+    font-size: 1.2rem; /* Adjust price size if needed */
+}
+
+.paragrafi {
+    text-align: left;
+    padding-left: 5px;
+    margin-top: 0; /* No space between title and paragraph */
+}
+
+.spacer {
+    flex-grow: 1; /* Pushes the button down */
+}
+
+.btnmsheft {
+    align-self: center;
+    margin-top: 10px;
+}
+
+/* Make the h2 smaller and align it left */
+.order-delivery {
+    font-size: 1rem; /* Smaller font size */
+    text-align: left; /* Align to the left */
+    margin-top: auto; /* Push it to the bottom of the card */
+    margin-left: 10px; /* Space from the left edge */
+}
+
+@media (max-width: 768px) {
+    .Cards {
+        margin-right: 28px;
+        grid-template-columns: 1fr;
+        width: 90%;
+        justify-content: center; /* Center the grid on mobile */
+        align-items: center; /* Align the grid items in the center */
+    }
+}

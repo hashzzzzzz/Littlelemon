@@ -1,29 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap');
 
-.navi{
-    margin-left: 120px;
-    margin-right: 120px;
+.navi {
+  margin: 0 120px;
+  padding: 20px 0;
+  background-color: white;
+  z-index: 10;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 280px;
+  height: 80px;
+}
+
+.texti {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  font-family: 'Markazi Text', serif;
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.texti a {
+  text-decoration: none;
+  color: black;
+}
+
+.toggle-btn {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* ----------- Mobile Responsive Styling ----------- */
+@media screen and (max-width: 768px) {
+  .navi {
+    margin: 0;
+    padding: 10px 16px;
   }
-  .elementet{
+
+  .nav-container {
+    width: 100%;
     display: flex;
-    align-items: center;
-    gap: 68px;
-    list-style-type: none;
-}
-.elementet .texti{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    width: 160px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .toggle-btn {
+    align-self: flex-start; /* Move the toggle button to the left */
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .texti {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 22px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    margin-bottom: 20px;
+  }
+
+  .texti.show {
     display: flex;
-    align-items: center;
-    gap: 40px;
-    list-style-type: none;
-    font-family: 'Markazi Text', serif;
-    font-size: 28px;
-}
-.texti a{
-    text-decoration: none;
+  }
+
+  .texti li {
+    padding: 8px 0;
+  }
+
+  .texti a {
     color: black;
-}
-.navi img {
-    width: 280px;
-    height: 80px;
-    margin-right: 20px;
+    text-decoration: none;
   }
+}

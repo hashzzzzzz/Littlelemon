@@ -1,0 +1,124 @@
+/* aboutus.css */
+.aboutus-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    height: 640px;
+    margin: 0 auto;
+  }
+  
+  .text-container {
+    
+    flex: 1;
+  }
+  
+  .text-container h2 {
+    font-size: 2rem;
+    color: #495e57;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .text-container p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+    font-style: italic;
+  }
+  
+  .image-container {
+    margin-left: 80px;
+    margin-bottom: 100px;
+    position: relative;
+    flex: 1;
+  }
+  
+  .image-container img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+  }
+  
+  .image-container .second-img {
+    position: absolute;
+    top: 70%;
+    right: 40%;
+    width: 90%;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .aboutus-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .text-container {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  
+    .text-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .text-container p {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+  
+    .image-container {
+      margin-left: 0;
+      margin-bottom: 650px; /* Keep same depth as desktop to preserve layout */
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .image-container img {
+      max-width: 70%;
+    }
+  
+    .image-container .second-img {
+      top: 70%;
+      right: 40%;
+      width: 90%;
+      transform: rotate(0deg);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aboutus-container{
+        margin-bottom: 200px;
+    }
+    .text-container{
+        margin-bottom: 0;
+    }
+    .text-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .text-container p {
+      font-size: 0.9rem;
+    }
+    .image-container{
+        margin-left:97px ;
+    }
+  
+    .image-container .second-img {
+      top: 70%;
+      right: 40%;
+      width: 90%;
+    }
+  }
+  

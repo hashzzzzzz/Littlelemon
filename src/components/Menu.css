@@ -1,0 +1,63 @@
+* {
+    margin-top: 30px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .h1butonbashk {
+    padding-top: 30px;
+    margin-left: 0px;
+    margin-top: 90px;
+    margin-bottom: 0;
+    padding-bottom: 40px; /* ✅ This adds space below */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 175px;
+    background-color: rgb(208, 208, 187);
+  }
+  
+  
+  h1 {
+    font-size: 60px;
+  }
+  
+  .btn2 {
+    width: 300px;
+    height: 60px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #F4CE14;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Markazi Text', serif;
+    border-radius: 15px;
+  }
+  
+  @media screen and (max-width: 486px) {
+    .h1butonbashk {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px; /* Tighter gap between h1 and button */
+      margin: 0px auto;
+    }
+  
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 0; /* remove extra spacing below h1 */
+    }
+  
+    .btn2 {
+      width: 80%;
+      font-size: 28px;
+      margin-top: 5px; /* Reduced space above button */
+      margin-bottom: 17px;
+    }
+  }
+  

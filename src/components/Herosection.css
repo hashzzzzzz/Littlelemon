@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap');
-
 .box {
   display: flex;
   justify-content: space-between;
@@ -15,7 +13,7 @@
   margin-left: 150px;
   flex: 1;
   padding: 0px;
-  text-align: left; 
+  text-align: left;
 }
 
 .left h1,
@@ -25,10 +23,11 @@
   padding: 0;
   line-height: 1;
   font-family: 'Markazi Text', serif;
-  text-align: left; }
+  text-align: left;
+}
 
 .left h1 {
-    color: #F4CE14;
+  color: #F4CE14;
   font-size: 64pt;
 }
 
@@ -44,22 +43,23 @@
 
 .left button {
   width: 300px;
-  height: 50px;
-  margin-top: 10px;
+  height: 60px;
+  margin-top: 10px; /* Decreased margin to bring it closer */
   padding: 10px 20px;
   background-color: #ffffff;
   color: #000000;
   border: none;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 40px;
+  font-style: bold;
   text-align: center;
   font-family: 'Markazi Text', serif;
-  text-align: center; 
   background-color: #F4CE14;
   border-radius: 15px;
 }
 
 .foto {
+  margin-top: 80px;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -67,10 +67,75 @@
 }
 
 .foto img {
-  margin-top: 60px;
-  margin-right: 120px;
+  margin-top: 20px; /* Decreased margin to bring image closer to the button */
+  margin-right: 50px; /* Reduced right margin */
   width: 400px;
   height: 465px;
   border-radius: 8px;
   object-fit: cover;
+}
+
+/* ----------- Mobile Responsive Styling ----------- */
+@media screen and (max-width: 768px) {
+  .box {
+    flex-direction: column; /* Stack the content vertically */
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .left {
+    margin-left: 0; /* Remove margin-left on mobile */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px;
+  }
+
+  .left h1 {
+    font-size: 40pt; /* Adjust font size for smaller screens */
+  }
+
+  .left h2 {
+    font-size: 28pt; /* Adjust font size */
+  }
+
+  .left p {
+    font-size: 22pt; /* Adjust font size */
+  }
+
+  .left button {
+    width: 250px; /* Adjust button width */
+    height: 45px; /* Adjust button height */
+    font-size: 24px; /* Adjust font size */
+    margin-top: 10px; /* Reduced margin to bring the button closer */
+    margin-bottom: 0px; /* Remove bottom margin */
+    margin-left: auto; /* Center button */
+    margin-right: 72px; /* Center button */
+  }
+
+  .foto {
+    margin-top: 0px; /* Reduced top margin to bring image closer to the button */
+    width: 100%; /* Make the image container take full width */
+    display: flex;
+    justify-content: center;
+    margin-right: 14px;
+  }
+
+  .foto img {
+    width: 100%; /* Make the image responsive */
+    max-width: 320px; /* Ensure image does not get too large */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0; /* Remove margin on right */
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 429px) and (max-width:768px) {
+  .foto img {
+    width: 100%; /* Make the image responsive */
+    max-width: 400px; /* Ensure image does not get too large */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0; /* Remove margin on right */
+    margin-left: 15px;
+    margin-right: 2.5px;
+  }
+
 }

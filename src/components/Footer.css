@@ -1,0 +1,108 @@
+.site-footer {
+  background-color: #495e57;
+  color: #fff;
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+}
+
+.footer-content {
+  /* Remove margin-left to avoid the right gap */
+  display: flex;
+  justify-content: space-between; /* Updated to space out the sections evenly */
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+  width: 100%;
+  padding-left: 60px;  /* Optional: Add padding for left and right to create some space */
+ 
+}
+
+.footer-logo {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footfoto {
+  width: 100px;
+  height: 150px;
+  display: block;
+  object-fit: contain;
+}
+
+.sitemap,
+.contact-us,
+.social-media {
+  flex: 1;
+  text-align: left;
+  min-width: 180px;
+}
+
+.sitemap h4,
+.contact-us h4,
+.social-media h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sitemap-links,
+.contact-details,
+.social-links {
+  display: block;
+  
+}
+
+.sitemap-links a,
+.contact-details p,
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 6px 0;
+  display: block;
+}
+
+.sitemap-links a:hover,
+.social-links a:hover {
+  color: #f4ce14;
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .footer-content {
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center; /* Centering everything on mobile */
+    gap: 30px;
+    width: 100%;
+  }
+
+  .footer-logo {
+    flex: none;
+    text-align: center; /* Centering the logo */
+  }
+
+  .footfoto {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px auto;
+  }
+
+  .sitemap,
+  .contact-us,
+  .social-media {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center; /* Centering the text in these sections */
+  }
+
+  .sitemap-links a,
+  .contact-details p,
+  .social-links a {
+    font-size: 0.95rem;
+  }
+}
