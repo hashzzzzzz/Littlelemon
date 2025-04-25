@@ -1,6 +1,6 @@
 import salada from '../assets/greek salad.jpg';
 import dessert from '../assets/lemon dessert.jpg'
-import burscheta from '../assets/bruchetta.svg'
+import burscheta from '../assets/bruchetta1.svg'
 import './Cards.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
