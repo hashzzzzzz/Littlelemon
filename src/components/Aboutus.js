@@ -4,6 +4,7 @@ import img2 from '../assets/Mario and Adrian b.jpg';
 
 const Aboutus = () => {
   return (
+    
     <div className="aboutus-container"> 
       <div className="text-container">
         <h2>About Little Lemon</h2>

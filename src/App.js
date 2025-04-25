@@ -1,4 +1,3 @@
-// App.js
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Herosection from './components/Herosection';
@@ -15,10 +14,18 @@ function Home() {
   return (
     <>
       <Herosection />
-      <Menu />
-      <Cards />
-      <Testimonial />
-      <Aboutus />
+      <div id="menu">
+        <Menu />
+      </div>
+      <div id="cards">
+        <Cards />
+      </div>
+      <div id="testimonial">
+        <Testimonial />
+      </div>
+      <div id="about">
+        <Aboutus />
+      </div>
       <Footer />
     </>
   );
